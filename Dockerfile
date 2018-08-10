@@ -1,4 +1,7 @@
 FROM tutum/apache-php
+
+LABEL maintainer="neuronwade <neuronwade@gmail.com>"
+
 RUN apt-get update && apt-get install -yq git && rm -rf /var/lib/apt/lists/*
 
 ENV WEB_GIT_URL https://github.com/typecho/typecho.git
