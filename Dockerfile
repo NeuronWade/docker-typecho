@@ -10,4 +10,3 @@ ENV REPOS_TAG v1.1-17.10.30-release
 RUN mkdir -p /html && rm -rf /var/www/html && ln -s /html /var/www/html && chown -R www-data:www-data /html/
 RUN git clone $WEB_GIT_URL /html
 RUN cd /html
-RUN git checkout tags/v1.1-17.10.30-release -b v1.1-17.10.30-release
